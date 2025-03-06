@@ -1,0 +1,47 @@
+.main {
+    padding-top: 0.2rem;
+    .info {
+        border: 2px solid #ea580c;
+        border-radius: 0.05rem;
+        padding: 0.1rem 0.1rem 0.1rem 0.3rem;
+        position: relative;
+        background: #ffedd5;
+        color: #9a3412;
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 0.16rem;
+            left: 0.07rem;
+        }
+        h5 {
+            font-size: 0.1rem;
+        }
+        p {
+            font-size: 0.09rem;
+        }
+    }
+
+    .back {
+        margin-top: 0.15rem;
+        border-radius: 0.05rem;
+        width: 100%;
+        height: 0.26rem;
+        border: 2px solid #000;
+        font-size: 0.09rem;
+        color: #000;
+        line-height: 0.24rem;
+        text-align: center;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+    }
+}

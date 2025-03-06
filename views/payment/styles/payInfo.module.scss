@@ -1,0 +1,178 @@
+.main {
+    position: relative;
+    height: 100%;
+    .nav {
+        display: flex;
+        padding: 0.03rem;
+        background: rgb(239, 244, 248);
+        height: 0.27rem;
+        border-radius: 0.05rem;
+        margin-bottom: 0.2rem;
+        div {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.05rem;
+            font-size: 0.1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: rgb(89, 105, 127);
+            &.nav_disable {
+                cursor: not-allowed;
+            }
+            &.check {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+    .dashboard {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 0.15rem;
+        border-bottom: 2px solid #ededed;
+        .price {
+            display: flex;
+            align-items: center;
+            font-size: 0.26rem;
+            font-weight: 900;
+            img {
+                height: 0.18rem;
+                margin-right: 0.06rem;
+                border-radius: 50%;
+            }
+
+            &.skeleton {
+                .avatar {
+                    width: 0.18rem;
+                    height: 0.18rem;
+                }
+                .block {
+                    width: 0.4rem;
+                    height: 0.15rem;
+                    margin-left: 0.05rem;
+                }
+            }
+        }
+        .symbol {
+            display: flex;
+            align-items: center;
+            font-size: 0.11rem;
+            .payCurrency {
+                background: #ededed;
+                padding: 0 0.12rem;
+                font-size: 0.1rem;
+                min-width: 0.55rem;
+                height: 0.3rem;
+                border-radius: 0.04rem;
+                margin-left: 0.06rem;
+                display: flex;
+                align-items: center;
+                color: rgb(214, 214, 214);
+            }
+            &.skeleton {
+                .block {
+                    margin-left: 0.06rem;
+                    width: 0.55rem;
+                    height: 0.3rem;
+                }
+            }
+        }
+    }
+    .info {
+        margin-top: 0.17rem;
+        .line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4b5563;
+            font-size: 0.1rem;
+            line-height: 1.5;
+            margin-bottom: 0.08rem;
+            .block {
+                width: 0.6rem;
+                height: 0.2rem;
+            }
+            span {
+                margin-right: 0.1rem;
+            }
+            .fee {
+                background: #f3f4f6;
+                color: #000;
+                padding: 0.01rem 0.12rem;
+                font-size: 0.11rem;
+                border-radius: 0.04rem;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+            }
+        }
+    }
+    .foot {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0rem;
+        width: 60%;
+        font-size: 0.09rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.12rem;
+
+        .pay_time {
+            height: 0.26rem;
+            line-height: 0.26rem;
+            background: rgb(239, 244, 248);
+            border-radius: 0.04rem;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            text-align: center;
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+        }
+        .profile {
+            height: 0.26rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.08rem;
+            border: 1px solid rgb(222, 229, 237);
+            transition: all 0.2s;
+
+            cursor: pointer;
+            border-radius: 0.04rem;
+
+            &:hover {
+                background: rgb(239, 244, 248);
+            }
+            div {
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 0.07rem;
+                }
+            }
+            .expand {
+                height: 0.06rem;
+            }
+        }
+        .block {
+            border-radius: 0.04rem;
+            width: 100%;
+            height: 0.26rem;
+        }
+        button {
+            border-radius: 0.04rem;
+            width: 100%;
+            height: 0.26rem;
+            background: #000;
+            font-size: 0.09rem;
+            border: none !important;
+            color: #fff;
+        }
+    }
+}

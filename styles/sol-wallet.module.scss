@@ -1,0 +1,13 @@
+.wallet-adapter-dropdown-list {
+    // display: none;
+}
+
+.wallet-adapter-modal-container {
+    margin: 0 auto !important;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}

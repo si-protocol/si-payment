@@ -1,0 +1,13 @@
+/* @font-face {
+    font-family: 'DINPro';
+    src: url('./DINPro-Regular.otf');
+} */
+
+@font-face {
+    font-family: 'HarmonyOS_Sans_SC_Black';
+    src: url('./HarmonyOS_Sans_Black.ttf');
+}
+@font-face {
+    font-family: 'HarmonyOS_Sans_SC';
+    src: url('./HarmonyOS_Sans_SC_Regular.ttf');
+}
