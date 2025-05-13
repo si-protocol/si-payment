@@ -7,7 +7,7 @@ import { mainnet, bsc, bscTestnet, sepolia } from 'wagmi/chains';
 const customBsc = defineChain({
     ...bsc,
     rpcUrls: {
-        default: { http: ['https://bsc-mainnet.infura.io/v3/fb40925bfc8444b0bc5677870300725c', 'https://bsc.blockrazor.xyz', 'https://bsc-dataseed1.defibit.io'] }
+        default: { http: ['https://bsc-dataseed1.defibit.io', 'https://bsc-mainnet.infura.io/v3/fb40925bfc8444b0bc5677870300725c', 'https://bsc.blockrazor.xyz'] }
     }
 });
 
@@ -15,7 +15,7 @@ const customMainnet = defineChain({
     ...mainnet,
     rpcUrls: {
         default: {
-            http: ['https://mainnet.infura.io/v3/fb40925bfc8444b0bc5677870300725c', 'https://rpc.mevblocker.io']
+            http: ['https://rpc.mevblocker.io', 'https://mainnet.infura.io/v3/fb40925bfc8444b0bc5677870300725c']
         }
     }
 });
