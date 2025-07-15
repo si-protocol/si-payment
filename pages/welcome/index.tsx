@@ -6,7 +6,7 @@ const Welcome: FC = (): ReactElement => {
     }, []);
     return (
         <div className={css.main}>
-            <h4>Welcome to SI Pay</h4>
+            <h4>Welcome to Taoillium Pay</h4>
             <p>Checkout from Si using Pay</p>
             <p>Earn Rewards from your crypto payments</p>
         </div>

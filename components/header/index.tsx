@@ -20,7 +20,7 @@ const Header: FC<any> = (): ReactElement => {
                 alt=""
             />
             <img src="/images/logo.svg" alt="" />
-            SI Payment
+            Taoillium Payment
         </div>
     );
 };

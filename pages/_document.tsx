@@ -33,7 +33,7 @@ class AppDocument extends Document {
             <Html suppressHydrationWarning={true}>
                 <Head>
                     <link rel="icon" href="/favicon.svg" />
-                    <title>SI Payment</title>
+                    <title>Taoillium Payment</title>
                     <meta name="description" content="" />
                     <link rel="stylesheet" href="/font/font.css" />
                     <script

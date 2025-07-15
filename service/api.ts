@@ -38,7 +38,7 @@ class Server {
         // return `${this.meta.baseUrl}/transaction/pay-transaction/?orderId=${orderId}`;
         const str = Qs.stringify(params);
         console.log('str', str);
-        return `https://api-dev.si.online/transaction/pay-transaction/?${str}`;
+        return `${this.meta.baseUrl}/transaction/pay-transaction/?${str}`;
     };
 }
 
