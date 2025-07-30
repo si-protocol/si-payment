@@ -13,7 +13,8 @@ import { ReactNode, useMemo } from 'react';
 export function SolanaProvider({ children }: { children: ReactNode }) {
     const network = WalletAdapterNetwork.Mainnet;
     // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-    const endpoint = useMemo(() => `https://${process.env.SOL_NETWORK}.helius-rpc.com/?api-key=25f3663d-937e-4f7c-9460-511a2abd2d54`, [network]);
+    // const endpoint = useMemo(() => `https://${process.env.SOL_NETWORK}.helius-rpc.com/?api-key=25f3663d-937e-4f7c-9460-511a2abd2d54`, [network]);
+    const endpoint = process.env.SOL_RPC_URL!;
 
     // @ts-ignore
     const wallets: Adapter[] = useMemo(() => [new PhantomWalletAdapter(), new TorusWalletAdapter(), new LedgerWalletAdapter(), new SolletWalletAdapter({ network }), new SlopeWalletAdapter(), new SolflareWalletAdapter()], [network]);
